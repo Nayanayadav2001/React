@@ -1,9 +1,8 @@
 function Header(){
 
     return <div>
-        <h1>Header Component</h1>
+    <h3>Header Component</h3>
     </div>
-
 }
 
 export default Header
