@@ -1,13 +1,11 @@
-import Product from "./Product/Product-2"
-import Navbar from "./Product/Navbar"
+import Message from "./EventBinding/Message"
 
 
 function App(){
 
     return (
     <div>
-        <Navbar/>
-        <Product/>
+        <Message/>
     </div>
     )
 }
