@@ -1,11 +1,15 @@
-import Message from "./EventBinding/Message"
+import Employee from "./ListRendering/Employee"
+import Navbar from "./ListRendering/Navbar"
+
 
 
 function App(){
 
     return (
     <div>
-        <Message/>
+        <Navbar/>
+
+        <Employee/>
     </div>
     )
 }
