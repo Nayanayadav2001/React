@@ -10,6 +10,7 @@ let Navbar = ()=>{
                 <li> <Link to="./services" className="nav-link">Services</Link></li>
                 <li> <Link to="./contact" className="nav-link">Contact</Link></li>
                 <li> <Link to="./user" className="nav-link">User</Link></li>
+                <li> <Link to="./employee" className="nav-link">Employee</Link></li>
             </ul>
         </div>
     </nav>
