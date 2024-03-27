@@ -1,22 +1,10 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import Home from "./ContactApp/Home";
-import ContactApp from "./ContactApp/ContactApp";
 
 
 let App = () => {
 
-
     return <div>
-             <Router>
-            <Navbar/>
-            <Routes>
-                <Route path="/home" element={<Home/>}></Route>
-                <Route path="/contact" element={<ContactApp/>}></Route>
-            
-            </Routes>
-            </Router>
+       
     </div>
 }
 
