@@ -40,7 +40,6 @@ const UserApp = () => {
                     <UserDetails selusers={selusers}/>
                     </>: null
                 }
-                <UserDetails/>
             </div>
         </div>
 

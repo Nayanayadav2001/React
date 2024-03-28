@@ -20,7 +20,7 @@ const UserList = (props) => {
             <tbody>
                 {
                     props.users.map((user)=>{
-                       return <tr key={user.id} onClick={userHandler}>
+                       return <tr key={user.id} onClick={userHandler.bind(this,user)}>
                         <td>{user.id}</td>
                         <td>{user.name}</td>
                         <td>{user.email}</td>
