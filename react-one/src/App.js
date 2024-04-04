@@ -1,15 +1,28 @@
-import React from "react";
-import Reg from './Reg'
-
+import React, { Fragment } from 'react'
+import {Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Products from './Products/Products'
+import CreateProduct from './Products/CreateProduct'
 
 let App = () => {
 
-    return <div>
-        <nav className="navbar navbar-dark bg-dark text-white">
-        <h2>Registration-Form Component</h2>
-          </nav>
-        <hr />
-        <Reg/>
-    </div>
+
+    return <Fragment>
+    <Router>
+     <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
+        <Link to='/' className='navbar-brand'>Product Cart</Link>
+        <div className='ml-auto'>
+            <ul className='navbar-nav'>
+             <li><Link className='nav-link' to='/product'>Products</Link></li>
+             <li><Link className='nav-link' to='/create'>Create-Product</Link></li>
+            </ul>
+         </div>
+         </nav>
+         <Routes>
+             <Route path='/product' element={<Products/>}/>
+             <Route path='/create' element={<CreateProduct/>}/>
+         </Routes>
+    </Router>
+    </Fragment>
 }
 export default App
