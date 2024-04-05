@@ -8,9 +8,7 @@ const Products = () => {
 
     useEffect (() => {
         Axios.get('http://127.0.0.1:5000/api/products')
-        .then((resp)=>{
-            setProducts(resp.data)
-        })
+        .then((resp)=>{ setProducts(resp.data)})
         .catch()
     },[])
 
@@ -19,10 +17,10 @@ const Products = () => {
         <div className="container">
             <div className="row">
                 {
-                    products.length>0 ? <>
+                 products.length>0 ? <>
                     {
-                        products.map((product)=>{
-                            return <div className="col-md-4">
+                     products.map((product)=>{
+                         return <div className="col-md-4">
                             <div className="card">
                                  <div className="card-header">
                                    <img src={product.image} alt="image missing" />
